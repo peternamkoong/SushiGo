@@ -1,0 +1,165 @@
+CPSC 233 Group Meeting Minutes / Notes
+
+First Deadline: Feb 9 (First Demo)
+Second Deadline: March 3rd 11:59 pm  (Second Demo)
+Last Deadline: March 16th 11:30 pm (Third Demo)
+
+
+Mar 16:
+Scott started organizing all our classes into their respective packages:
+	GUI package, text package
+
+Howard and Daniel figure out GUI scoring and will implement it ASAP.
+
+Cyrus finishes the rule screen and will be formatted by Peter
+		-pictures are not quite finished but will be drawn and colored soon
+
+Cyrus, Peter started adding some aesthetics to the screens.
+
+Mar 15:
+We made good progress in revamping our switching of hands logic, however there are still bugs like (INSERT_BUG_ISSUES_HERE). Should be debugged by late tonight or early morning tomorrow.
+
+Scoring in the GUI is a huge issue and will now be worked on by everyone.
+
+Cyrus starts working on the rule screen formatting
+
+Peter and Howard start writing the correct javadoc for our classes
+
+Mar 14: 
+After a long hard fought battle with the switching of hands, it was decided that it’d be best to just rewrite the whole card creating and handing out sequence and have player turns be on seperate screens completely and interacting through a main screen.
+
+Scott finished the JUnit tests for scoring. 
+
+Implementation of Scoring needs to be completed, will be completed by Peter and Daniel
+
+Addition of the rules needs to be added, will be completed by Howard and Cyrus
+
+
+
+Mar 13:
+Scoring methods finally fixed, we have decided to write our JUnit tests to test if our scoring logic is being done correctly. 
+
+Scott and Howard start working on creating the JUnit tests.
+
+Daniel, Cyrus, and Peter Work on the GUI and splitting up the classes into more condensed and organized code.
+
+Switching hands is still the biggest challenge according to our code
+
+Mar 12:
+
+Hard A.I completed by Scott. Scott helping with debugging and fixing the scoring method.
+
+Revamped the text based code that has more use of  inheritance in it and more organized.
+
+Peter and Daniel decide to rehash the GUI code completely after the SuperClassGUI method was inefficient.
+
+GUI will now be coded with each scene being its own class and switching between objects via button clicks which is appropriate for our card game.
+
+
+
+Mar 8 :
+Daniel and Peter start working on rewriting the GUI code so that it is not all in one class
+Also working on creating the hands and cards differently since they are being made all at once
+Noticed an issue with switching hands. Tough to fix as of right now
+Scott continues to work on Hard A.I
+	-Cyrus and Howard slowly debug the scoring method
+Mar 6:
+
+We are still trying to figure out how to create a superclass for the gui seeing as methods to create buttons and such don’t really save lines of code. A method to create a scene would be just too broad.
+
+Scott and Daniel are thinking about ways to implement hard A.I. Strategies, machine learning?
+
+Howard and Cyrus discovered logic flaws in the scoring method and started debugging that
+
+Mar 5:
+	
+Demo Day, got feedback regarding using inheritance more throughout the project. Scott will be working on a Player class that contains methods that the Human and A.I will use, and that the A.I will overwrite.
+
+Howard, Peter ,Daniel, and Cyrus will be thinking about how to implement inheritance so that we don’t have to repeat ourselves in our code.
+
+Mar 2: 
+	Cyrus and Peter
+Fixed the issues with the GUI so that the game can be played up until the very end. Only issue now is with the final score. Will probably have to rewrite the code so that the final product GUI will be easier to code, luckily Daniel is already working on it
+	Scott and Howard
+Continued working on Hard A.I Have ideas right now on how to implement it, but waiting on new code to use 
+	Daniel
+Updating log and getting status updates from each team member. Remapping of original code is complete and now it just needs to be coded. Should be done within the week of March 5th, midterms allowing
+Mar 1:
+	Whole team:
+Met up to work on the project more together. More progress on all fronts. Extension for GUI for Saturday 11:59 pm. Will continue to try and code a hardcoded version of the gui for 1v1 and Hard A.I still proving to be difficult. Once Hard A.I will be completed along with the gui, then we will have a game that plays human vs human and human vs a.i
+Suggested that we start thinking about fun little things to add to the game since the end is near. 
+Feb 28:
+	Cyrus, Peter, and Daniel
+-Fixed the button issue and currently working on choosing a card from the hand, adding the card onto the player’s board, returning the board, removing the card from the players hand, then proceeding to the next player’s turn. Current difficulty is the adding the selected card to the board. May have to hard code it in to work on demo for Monday.
+Scott and Howard
+- Worked on implementing encapsulation to the text based version we have now. The text based version has been cleaned up significantly. The focus now is on figuring out the Hard A.I while Daniel works on writing up the mapping for the basic version of the game. Once Daniel is done writing the basic version of the game, will assist him in coding it.  
+
+Feb 27:
+	Team meeting to discuss the progress with assigned tasks from Feb 22nd. 
+Scott and Howard -  Hard A.I. The implementation of using machine learning via having a move list and updated a winningMovelist based on the move list when the A.I wins proved to be inefficient due to the number of simulations needed to conduct machine learning. Over 100 cards with 10 cards being drawn, the possible hand possibilities were too big to achieve machine learning without iterating over 1,000,000 times. It was decided that instead of having a hard A.I based on machine learning, Hard A.I would be approached via a method that selects “preferred cards” based on current hand. If possible the implementation of selecting “preferred card” based on current hand, other hands, and current cards on own board and other boards. This can be approached one step at a time by first getting preferred card from hand done first, then preferred card based on hand and based on own board etc etc. Issue seems to be in first coding the preferred card from hand first. 
+Cyrus and Peter - It is as we feared. There have been some issues in referencing data due to the limitations of creating instances. First issue seems to be adding the buttons to the cards. It seems only the 10th card of the face down (opponents hand) has a button. We expect it has to do with the creation of the cards and the implementation of the for loop that creates a button for each card.
+Daniel - updating team logs and checking in on the members of the group for what they’ve completed and discussed different ways to implement the code and/or write the code. Working on the mapping of the text based game so that it is at its core, the most basic skeleton of the game. Set a deadline for  March 6 to have the mapping done and to begin coding for the final product of the game.
+
+Feb 22nd:
+	Team meeting to discuss GUI. Agreed that we would focus on a GUI that would work specifically for a 1v1 game of sushiGO as human vs human. Scott and Howard assigned to coding the HARD A.I game mode and to start thinking about extras for the game. Cyrus and Peter assigned to code the GUI for the 1v1 game for demo 2. It was decided that Cyrus and Daniel would be presenting for demo 2. Daniel assigned to remap the classes and methods for the text based version so that it is at its most basic form which will help for the completed project.
+
+
+Feb 13th:
+
+Discussing our next deadline and what features be in our next demo.
+Basic GUI main menu created
+
+
+
+
+
+Feb 6:
+Started debugging (Howard)
+Step by step explanation of all classes done in preparation of demo
+Trace of program started (Peter)
+Code overview and checking (Scott)
+Javadoc commenting(Daniel)
+Decided on Scott and Peter for Demo 1 on Monday Feb 12 2019, desired time to present is at 13:00-13:30
+
+
+Feb 1 -Feb 5
+Howard and Scott work together to create the Deck class and the methods within
+Peter works towards the GameConfiguration class and the methods within
+Daniel works toward FinalScore class and the methods within 
+Cyrus works on Player and PVPGame classes and the methods within
+Scott works on Start class and the methods within, also takes responsibility of bringing all the classes together to run a coherent game. Commenting will be done once a basic game can be played.
+Scott works on Class diagram
+
+
+
+Jan 31:
+Learned about Arraylists in class. Decided to change all the card classes to a single card class that returns diff values. This will make creating an arraylist for the deck and the hand much easier since you can make arraylists with a specific class.
+Scott remade card class to include all cards, github page updated to have card class and other java docs online and editable.
+
+Daniel wrote up a rough draft of the board class that will include scoring in python syntax. Will be translated to Java syntax at a later date
+
+Howard will create the deck class that will take the card class and create objects and put them into an array list. From that arraylist a hand method will be used to create a hand object that has 10 random cards from the deck arraylist. The deck arraylist does not need to be changed at all while this happens.
+
+Once Howard has created the deck and hands, Scott will use that code and implement it in the game/ turn classes.(Scott has suggested to show cards in a row from 1-10. The user will be asked to input a number from 1-10 to choose which card to place on the board. At that point that card’s information will be sent to the board and replaces an element on the arraylist for that player’s board, while also removing or nullifying that card from that hand before being switched) Once that code has been implemented, then Daniel will be able to use the game/turn code for his board class(to record cards on placed on board and to complete scoring at the end. Scoring method almost complete)
+
+Let’s try to finish up our code by Friday, put it together by Saturday, and start debugging the text version by  Sunday so we can have it completed by the following Friday and be ready to demo the following Monday.
+
+Jan 30:
+
+Peter and Cyrus finished card classes, will upload to github
+Daniel and Scott finished team assignment 2
+
+
+
+
+
+
+Jan 28: 
+
+Cyrus: working class diagram, looking at GUI/UI implementation
+
+Peter: all the card classes, main menu (1. Player vs Player, 2. Player vs AI)
+
+Scott: start on the AI,
+
+Howard: shuffling cards
