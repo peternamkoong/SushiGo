@@ -13,7 +13,7 @@ import java.util.*;
 *
 *Once the scores are calculated, the player number and score are displayed
 */
-
+//test
 public class FinalScore {
 	private Hashtable<String, Integer>[] boards;
 	Player[] players;
